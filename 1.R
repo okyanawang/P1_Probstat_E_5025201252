@@ -1,20 +1,20 @@
-n <- 100
-m <- 50
-standar.dev <- 8
-
 #a
-set.seed(100)
-random <- rnorm(100)
-rata.rata <- mean(random)
-x1 <- floor(rata.rata)
-x2 <- ceiling(rata.rata)
-z1 <- (x1 - m) / standar.dev
-z2 <- (x2 - m) / standar.dev
-rnorm(n = 100, mean = m, sd = standar.dev)
-plot(rnorm(n = 100, mean = m, sd = standar.dev))
+x <- 3
+p <- 0.2    
+q <- 1 - p
+result <- dgeom(x, p)
 
 #b
-hist(rnorm(n = 100, mean = m, sd = standar.dev), xlab="x", ylab="y" ,breaks = 50, main = "5025201252_Okyan Awang R_Probstat_E_DNhistogram")
+mean(rgeom(n = 10000, prob = p) == 3)
 
 #c
-varians <- standar.dev ** 2
+summary(result)
+summary(mean(rgeom(n = 10000, prob = p) == 3))
+
+#d
+n = 10000
+hist(rgeom(n, prob = p), main = 'Histogram Geometrik')
+
+#e
+rataan <- 1/p
+varians <- (1-p)/p^2
