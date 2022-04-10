@@ -3,7 +3,6 @@ p <- 0.2
 
 #a
 vr <- 4
-
 comb <- function(n, x) {
   factorial(n) / factorial(n-x) / factorial(x)
 }
