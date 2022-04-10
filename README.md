@@ -70,6 +70,8 @@ n = 10000
 hist(rgeom(n, prob = p), main = 'Histogram Geometrik')
 ```
 
+<img src="asset/1d.png" alt="1d">
+
 <h4>Soal 1e</h4>
 Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Geometrik
 
@@ -101,6 +103,8 @@ Gambarkan grafik histogram berdasarkan kasus tersebut.
 hist(rbinom(vr, n, prob = p), xlab = "X", ylab = "Frekuensi",main = "Histogram Distribusi binomial")
 ```
 
+<img src="asset/2b.png" alt="2b">
+
 <h4>Soal 2c</h4>
 Nilai Rataan (μ) dan Varian (σ²) dari DistribusiBinomial.
 
@@ -130,6 +134,8 @@ n <- 365
 result <- dpois(1:365, lambda = lambda, log=FALSE)
 hist(result, xlab = "probabilitas", ylab = "hari", main = 'HISTOGRAM POISSON')
 ```
+
+<img src="asset/3b.png" alt="3b">
 
 <h4>Soal 3c</h4>
 dan bandingkan hasil poin a dan b , Apa kesimpulan yang bisa didapatkan
@@ -165,6 +171,8 @@ Histogram dari Distribusi Chi-Square dengan 100 data random.
 set.seed(100)
 curve(result <- rchisq(x, v, ncp = 0), from = 0, to = 100 ,xlab='x', ylab="v", main="HISTOGRAM POISSON")
 ```
+
+<img src="asset/4b.png" alt="4b">
 
 <h4>Soal 4c</h4>
 Nilai Rataan (μ) dan Varian (σ²) dari DistribusiChi-Square.
@@ -210,6 +218,11 @@ rexp(N, lambda)
 hist(rexp(N, lambda))
 ```
 
+<img src="asset/5b.png" alt="5b">
+<img src="asset/5b2.png" alt="5b2">
+<img src="asset/5b3.png" alt="5b3">
+<img src="asset/5b4.png" alt="5b4">
+
 <h4>Soal 5c</h4>
 Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Exponensial untuk n = 100 dan λ = 3
 
@@ -238,12 +251,16 @@ rnorm(n = 100, mean = m, sd = std.deviasi)
 plot(rnorm(n = 100, mean = m, sd = std.deviasi))
 ```
 
+<img src="asset/6a.png" alt="6a">
+
 <h4>Soal 6b</h4>
 Generate Histogram dari Distribusi Normal dengan breaks 50 dan format penamaan seperti pada soal
 
 ```
 hist(rnorm(n = 100, mean = m, sd = std.deviasi), xlab="x", ylab="y" ,breaks = 50, main = "5025201252_Okyan Awang Ramadhana_Probstat_E_DNhistogram")
 ```
+
+<img src="asset/6b.png" alt="6b">
 
 <h4>Soal 6c</h4>
 Nilai Varian (σ²) dari hasil generate random nilai Distribusi Normal.
